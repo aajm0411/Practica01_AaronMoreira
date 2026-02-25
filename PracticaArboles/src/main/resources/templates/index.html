@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="general/fragmentos :: head"></head>
+
+<body>
+
+<header th:replace="general/fragmentos :: header"></header>
+
+<div class="container mt-5">
+
+    <div class="text-center">
+        <h1 class="display-4">Sistema de Gestión de Árboles</h1>
+        <p class="lead mt-3">
+            Bienvenido a la práctica 01 desarrollada con Spring Boot,
+            Thymeleaf y Bootstrap.
+        </p>
+
+        <a th:href="@{/arbol/listado}" class="btn btn-success btn-lg mt-4">
+            Ver Árboles Registrados
+        </a>
+    </div>
+
+</div>
+
+<footer th:replace="general/fragmentos :: footer"></footer>
+
+</body>
+</html>
